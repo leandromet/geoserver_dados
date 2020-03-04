@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+  xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <NamedLayer>
+    <Name>inma_icone_animal</Name>
+    <UserStyle>
+      <Title>animal class</Title>
+      <FeatureTypeStyle>
+
+        <Rule>
+
+          <MaxScaleDenominator>100000</MaxScaleDenominator>
+          <TextSymbolizer>
+         <Label>
+           <ogc:PropertyName>ordem</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>phylum</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>genus</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>species</ogc:PropertyName>
+         </Label>
+         <Fill>
+           <CssParameter name="fill">#505050</CssParameter>
+         </Fill>
+       </TextSymbolizer>
+      <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#0000FF</CssParameter>            
+              <CssParameter name="stroke-opacity">0.4</CssParameter>
+              <CssParameter name="stroke-width">0.6</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+
+      
+        </Rule>
+
+        <Rule>
+          <Title>Beija-Flor</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Trochilidae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x72</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#ffff00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+        <Rule>
+          <Title>Passaro</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Passeriformes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x74</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#ffff00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+        <Rule>
+          <Title>Outra Ave</Title>
+
+ <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Ave</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Passeriformes</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+        
+                <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Trochilidae</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+          
+            </ogc:And>
+          </ogc:And>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x006F</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#ffff00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+
+
+
+
+        <Rule>
+          <Title>Reptil</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Reptilia</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x4D</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#33cc33</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#009933</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+        <Rule>
+          <Title>Anfibio</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Amphibia</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x4E</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#cccc00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#cc9900</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+        <Rule>
+          <Title>Peixe</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Actinopterygii</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x0050</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#3399ff</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#0000ff</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+        <Rule>
+          <Title>Inseto</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Insecta</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://AnimaliSilhouetti#0x0073</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#663300</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#1a0d00</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+
+        <Rule>
+          <Title>Primata</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Primates</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x0027</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#666666</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#000000</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+
+        <Rule>
+          <Title>Roedor</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Rodentia</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+        <WellKnownName>ttf://Animals 1#0x004A </WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#666666</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#000000</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+
+        <Rule>
+          <Title>Morcego</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Chiroptera</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+        <WellKnownName>ttf://Animals 1#0x0079 </WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#666666</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#000000</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+      <Rule>
+          <Title>Outro Mamífero</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>class</ogc:PropertyName>
+                <ogc:Literal>Mammalia</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Primates</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Rodentia</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+               <ogc:And>
+                              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Chiroptera</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+                                            <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Cetacea</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+               </ogc:And>
+               </ogc:And>
+            </ogc:And>
+          </ogc:And>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+        <WellKnownName>ttf://AnimaliSilhouetti#0x005A </WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#666666</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#000000</CssParameter>
+          <CssParameter name="stroke-opacity">0.5</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+
+<Rule>
+          <Title>Mamif. Marinho</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>ordem</ogc:PropertyName>
+                <ogc:Literal>Cetacea</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Animals 1#0x0046</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.5</CssParameter>
+           <CssParameter name="fill">#0000ff</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#0000ff</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>16</Size>
+   </Graphic>
+          </PointSymbolizer>
+        </Rule>
+
+
+
+
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
