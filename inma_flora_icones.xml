@@ -1,0 +1,435 @@
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+  xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <NamedLayer>
+    <Name>inma_icone_flora</Name>
+    <UserStyle>
+      <Title>flora class</Title>
+      <FeatureTypeStyle>
+
+
+
+<Rule>
+          <Title>Myrtaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Myrtaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Dead Plants#0x37</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#339933</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+  <Rule>
+          <Title>Fabaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Fabaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Dead Plants#0x32</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#9933ff</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+    <Rule>
+          <Title>Melastomataceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Melastomataceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x32</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#ff00ff</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+  <Rule>
+          <Title>Orchidaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Orchidaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Dead Plants#0x6E</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#ff0066</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+    <Rule>
+          <Title>Bromeliaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Bromeliaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x52</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#9933ff</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+  <Rule>
+          <Title>Rubiaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Rubiaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Dead Plants#0x58</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#cc0066</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+    <Rule>
+          <Title>Asteraceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Asteraceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x44</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#ff9933</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+
+    <Rule>
+          <Title>Piperaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Piperaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x5A</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#ff0000</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+
+      <Rule>
+          <Title>Polypodiaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Polypodiaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x49</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#00cc00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+  <Rule>
+          <Title>Malpighiaceae</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>family</ogc:PropertyName>
+                <ogc:Literal>Malpighiaceae</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Dead Plants#0x49</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#ff9933</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+
+
+    <Rule>
+          <Title>Briofita/Embriofita</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>phylum</ogc:PropertyName>
+                <ogc:Literal>Briophyta</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>phylum</ogc:PropertyName>
+                <ogc:Literal>Marchantiophyta</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>  
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x4F</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#00cc00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+
+    <Rule>
+          <Title>Monilophyta</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>phylum</ogc:PropertyName>
+                <ogc:Literal>Monilophyta</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x51</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#00cc00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+
+      <Rule>
+          <Title>Outras Esper.</Title>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>phylum</ogc:PropertyName>
+                <ogc:Literal>Lycopodiophyta</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+ </ogc:Filter>
+          <PointSymbolizer>
+     <Graphic>
+       <Mark>
+         <WellKnownName>ttf://Plants#0x6D</WellKnownName>
+         <Fill>
+           <CssParameter name="opacity">0.8</CssParameter>
+           <CssParameter name="fill">#00cc00</CssParameter>
+
+         </Fill>
+         
+         <Stroke>
+                      <CssParameter name="stroke">#999999</CssParameter>
+          <CssParameter name="stroke-opacity">0.8</CssParameter>
+            </Stroke>
+       </Mark>
+     <Size>28</Size>
+   </Graphic>
+          </PointSymbolizer>
+  </Rule>
+
+<Rule>
+          <MaxScaleDenominator>100000</MaxScaleDenominator>
+          <TextSymbolizer>
+         <Label>
+           <ogc:PropertyName>class</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>ordem</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>family</ogc:PropertyName><![CDATA[ | 
+|]]>
+           <ogc:PropertyName>species</ogc:PropertyName>
+         </Label>
+         <Fill>
+           <CssParameter name="fill">#505050</CssParameter>
+         </Fill>
+       </TextSymbolizer>
+      <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#0000FF</CssParameter>            
+              <CssParameter name="stroke-opacity">0.4</CssParameter>
+              <CssParameter name="stroke-width">0.6</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+
+      
+        </Rule>
+
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
